@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <Link href="/" className="navbar-logo">
-        MyLogo
+        TOOBA ILYAS
       </Link>
       {/* Desktop Links */}
       <div className="nav-links">
