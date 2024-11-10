@@ -1,0 +1,48 @@
+/* styles/Contact.css */
+
+#contact {
+    color: #ffffff;
+    padding: 16px;
+}
+
+.contact {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.contact h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 8px 0;
+    text-align: start;
+}
+
+.contact p {
+    font-size: 1.125rem;
+    margin: 8px 0;
+    text-align: start;
+}
+
+.contact a {
+    color: #adb7be;
+    text-decoration: none;
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    margin-top: 16px;
+}
+
+.socials img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.socials img:hover {
+    transform: scale(1.1);
+}

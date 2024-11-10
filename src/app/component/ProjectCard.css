@@ -1,0 +1,72 @@
+/* styles/ProjectCard.css */
+
+/* Main Container Styling */
+#projectCard {
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+/* Section Styling */
+.section-header {
+    font-weight: bold;
+    font-size: 2rem;
+    background-color: rgba(128, 0, 128, 0.15); /* Light purple with transparency */
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+/* Project Card Container */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+    background-color: #181818;
+    border-radius: 0.5rem;
+    max-width: 1200px;
+    width: 100%;
+}
+
+/* Individual Project Card */
+.project-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #33353f;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-align: center;
+}
+
+.project-card:hover {
+    background-color: #c6aed6;
+    color: black;
+}
+
+/* Project Image */
+.project-image {
+    width: 100px;
+    height: 100px;
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+/* Project Title */
+.project-title {
+    font-weight: bold;
+    font-size: 1.25rem;
+    margin-top: 0.5rem;
+}
+
+/* Project Description */
+.project-description {
+    font-size: 0.875rem;
+    margin: 0.5rem 0;
+    color: #adb7be;
+}
