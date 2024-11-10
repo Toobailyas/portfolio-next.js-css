@@ -18,7 +18,7 @@ const Navbar = () => {
       {/* Desktop Links */}
       <div className="nav-links">
         <Link href="#about">About</Link>
-        <Link href="#projects">Projects</Link>
+        <Link href="#projectCard">Projects</Link>
         <Link href="#contact">Contact</Link>
       </div>
       {/* Mobile Menu Toggle Button */}
