@@ -33,6 +33,6 @@
 @media (max-width: 768px) {
     .about-section {
     display: flex;
-    flex-direction: flex-wrap;
+    flex-wrap:wrap;
     align-items: center;
 }
