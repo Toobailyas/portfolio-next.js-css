@@ -4,35 +4,69 @@
     margin-top: 10px;
     border: 1px solid #33353F;
 }
+
 .container {
     padding: 8px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
+
 .about-section {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     align-items: center;
+    gap: 20px;
 }
+
 .about-header {
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 16px;
 }
+
 .about-description {
     font-size: 1rem;
     line-height: 1.6;
 }
+
 .skills, .education {
     margin-top: 20px;
     font-size: 1.2rem;
     font-weight: bold;
 }
+
 .skills li, .education li {
     font-size: 0.875rem;
 }
 
+/* Responsive styling */
+@media (max-width: 1024px) {
+    .about-header {
+        font-size: 1.8rem;
+    }
+    .about-description {
+        font-size: 0.95rem;
+    }
+    .skills, .education {
+        font-size: 1rem;
+    }
+}
+
 @media (max-width: 768px) {
     .about-section {
-    display: flex;
-    flex-wrap:wrap;
-    align-items: center;
+        flex-direction: column; /* Stack content in a column on smaller screens */
+        text-align: center;
+    }
+    .about-header {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+    .about-description {
+        font-size: 0.9rem;
+    }
+    .skills, .education {
+        font-size: 1rem;
+        text-align: center;
+    }
 }
+
