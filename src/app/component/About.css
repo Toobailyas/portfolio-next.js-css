@@ -29,3 +29,10 @@
 .skills li, .education li {
     font-size: 0.875rem;
 }
+
+@media (max-width: 768px) {
+    .about-section {
+    display: flex;
+    flex-direction: flex-wrap;
+    align-items: center;
+}
