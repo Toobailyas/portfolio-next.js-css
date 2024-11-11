@@ -3,7 +3,7 @@
 .hero-section {
     margin-bottom: 32px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
 }
 
