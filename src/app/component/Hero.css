@@ -9,10 +9,10 @@
 
 .hero-container {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Two equal columns */
-    gap: 16px; /* Space between grid items */
-    padding: 0 36px;
-    align-items: center; /* Center items vertically */
+   grid-template-columns: repeat(1, 1fr); /* equivalent to 'grid-cols-1' */
+    margin-top: 32px; /* equivalent to 'mt-8' */
+    margin-left: 36px; /* equivalent to 'ml-9' */
+    margin-right: 36px; /* Center items vertically */
 }
 
 .hero-text {
@@ -106,9 +106,10 @@
     border-radius: 50%;
 }
 
-@media (max-width: 768px) {
-    .hero-container {
-        grid-template-columns: 1fr; /* Stack in a single column */
+@media (min-width: 640px) { /* This is the 'sm' breakpoint in Tailwind */
+    .custom-grid {
+        grid-template-columns: repeat(12, 1fr); /* equivalent to 'sm:grid-cols-12' */
     }
 }
+
 
