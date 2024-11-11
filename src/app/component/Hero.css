@@ -3,7 +3,7 @@
 .hero-section {
     margin-bottom: 32px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
 }
 
@@ -104,3 +104,9 @@
     transform: translate(-50%, -50%);
     border-radius: 50%;
 }
+
+@media (max-width: 768px) {
+    .hero-section {
+        flex-direction: column; /* Stack content in a column on smaller screens */
+        text-align: center;
+    }
