@@ -9,9 +9,10 @@
 
 .hero-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 16px;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 16px; /* Space between grid items */
     padding: 0 36px;
+    align-items: center; /* Center items vertically */
 }
 
 .hero-text {
@@ -106,8 +107,8 @@
 }
 
 @media (max-width: 768px) {
-    .hero-section {
-        flex-direction: column; /* Stack content in a column on smaller screens */
-        text-align: center;
+    .hero-container {
+        grid-template-columns: 1fr; /* Stack in a single column */
     }
-    }
+}
+
